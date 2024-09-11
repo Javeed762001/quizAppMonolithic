@@ -34,4 +34,9 @@ public class QuestionController {
         return questionService.getQuestionsBycategory(category);
     }
 
+    @GetMapping("/testJenkins")
+    public ResponseEntity<?> testJenkins(){
+        return ResponseEntity.ok().body("testing Jenkins");
+    }
+
 }
