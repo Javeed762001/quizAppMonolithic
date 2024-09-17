@@ -39,4 +39,9 @@ public class QuestionController {
         return ResponseEntity.ok().body("testing Jenkins");
     }
 
+    @GetMapping("/testJenkinsPipeline")
+    public ResponseEntity<?> testPipeline(){
+        return ResponseEntity.ok().body("testing Jenkins Pipeline");
+    }
+
 }
